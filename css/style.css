@@ -1,0 +1,45 @@
+.holder {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.item {
+    font-size: 30px;
+    display: flex;
+    flex-grow: 1;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+
+.item:nth-child(1){
+    background-color: tomato;
+    order: -3;
+    flex-basis: calc(100% / 2);
+    border-radius: 47px 0px 0px 0px;
+}
+
+.item:nth-child(2){
+    background-color: cornflowerblue;
+}
+
+.item:nth-child(3){
+    background-color: violet;
+    order: -1;
+}
+
+.item:nth-child(4){
+    background-color: green;
+}
+
+.item:nth-child(5){
+    background-color: yellow;
+    order: -2;
+    flex-basis: calc(100% / 2);
+    border-radius: 0px 47px 0px 0px;
+}
